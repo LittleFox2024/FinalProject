@@ -3,13 +3,13 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Adopt Dogs - Other Options</title>
+        <title>Adopt Dogs!</title>
         <link rel="stylesheet" href="aero-vs.css">
-        <link rel="stylesheet" href="info-styles.css">
+        <link rel="stylesheet" href="index-styles.css">
     </head>
     <body>
         <div id="top">
-        <h1>Information & Background Info</h1>
+        <h1>Send some Feedback!</h1>
         <nav id="desknav">
             <a href="index.html"><b>Home</b></a>&nbsp;&nbsp;
             &nbsp;&nbsp;<a href="background.html"><b>Information</b></a>&nbsp;&nbsp;
@@ -26,23 +26,37 @@
             <a href="references.html"><b>References & Links</b></a><br>
             <a href="feedback.html"><b>Leave Feedback!</b></a><br>
         </nav>
-        <div id="mobilepic"></div>
-        </div>
+            <div id="mobilepic"></div>
+            </div>
+        </div> <!--This has been flagged as stray, but its not-->
         <div id="sidepic">
         </div>
         <div id="main">
-            <h2>Why is this important?</h2>
-            <p>Everyday we see and care about the dogs, cats, and other pets all around us.
-                They are important to us and are treated like children.
-                But yet we keep buying them from breeders without caring about what it means to them,
-                or to us.
-            </p>
-            <p>
-                Buying from a breeder may seem like no big deal, but there is actually a lot going on when we do.
-                Breeders usually care about profit over the dogs themselves, and the dogs are often not treated well.
-                Puppy mills are a specific example of this. 
-            </p>
-        </div>
+            <h2>Want to leave some feedback?</h2>
+            <p>Please let me know what you liked and didn't like!.</p>
+            <form method="post" action="https://www.example.com">
+            <!--Unfortunately I don't have a server to actually collect data.-->
+            <table>
+                <tr>
+                    <td>
+                        <label>Email Address</label>
+                    </td>
+                    <td>
+                        <input type="text" name="Email" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Feedback</label>
+                    </td>
+                    <td>
+                        <input type="text" name="feedback">
+                    </td>
+                </tr>
+            </table>
+            <input type="submit" id="submit">
+            </form>
+        </div>  
     </body>
     <footer>
         Email: <a href="mailto:bdeforest1@ivytech.edu">bdeforest1@ivytech.edu</a>
