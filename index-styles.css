@@ -1,0 +1,81 @@
+/*Styles specifically for index.html*/
+
+.wr {
+    font-weight: bold;
+    text-indent: 4em;
+    padding: none;
+    margin: none;
+}
+
+ul {
+    color: black;
+}
+
+li {
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    
+}
+
+li:before {
+    content: url(ArrowSmall.png);
+    padding-right: 5px;
+  }
+
+li a {
+    color: blue;
+    text-decoration: none;
+    
+}
+
+li:hover {
+    background-color: rgba(16, 79, 250, 0.1);
+    border-style: solid;
+    border-radius: 0.25em;
+    border-width: 0.12em;
+    border-color: lightgrey;
+    width: 25em;
+}
+
+ul {
+    list-style-type: none;
+}
+
+#sidepic{
+    display: flex;
+    flex-direction: column;
+    width: 18%;
+    padding: 0.2em;
+    margin: 0.2em;
+    position: fixed;
+    height: 65dvh;
+    background-image: url(Moxie.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-style: solid;
+    border-color: burlywood;
+    border-width: 0.15em;
+    border-radius: 2%;
+    background-position: center;
+}
+
+@media screen and (max-width: 912px) {
+    #mobilepic {
+        height: 30dvh;
+        width: 100dvw;
+        background-image: url(Moxie.jpeg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        margin: none;
+    }
+
+    #sidepic {
+        display: none;
+    }
+}
+
+@media screen and (min-width:912px) {
+    #mobilepic {
+        display: none;
+    }
+}

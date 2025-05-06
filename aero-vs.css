@@ -1,0 +1,177 @@
+/*Overall stylesheet for the Aero-ish Visual Style on all of the 
+pages. This only includes communally used styles.*/
+
+/*Selectors for HTML elements*/
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+head {
+    font-size: 1em;
+}
+
+h1{
+    color: blue;
+    size: 3em;
+    padding: none;
+    margin: none;
+}
+
+h2{
+    color: lightseagreen;
+    size: 2.5em;
+    margin: none;
+    padding: none;
+}
+
+body {
+    background-image: url(Background.png);
+    min-height: 98dvh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: none;
+    position: fixed;
+}
+
+nav {
+    /*background-color: rgba(245, 245, 245);*/
+    background-image: linear-gradient(to bottom, rgba(245, 245, 245), white);
+    padding: 0.4em;
+    margin-right: 1em;
+    border-style: solid;
+    border-radius: 0.25em;
+    border-width: 0.12em;
+    border-color: lightgrey;
+}
+
+nav:hover {
+    background-image: linear-gradient(to bottom, rgb(245, 245, 245), rgb(253, 253, 253));
+}
+
+nav a {
+    color: black;
+    padding: 0.42em;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: black;
+    background-image: linear-gradient(to bottom, rgb(255, 230, 0), white);
+    padding: 0.2em;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-decoration: none;
+    border-style: solid;
+    border-radius: 0.25em;
+    border-width: 0.12em;
+    border-color: orange;
+}
+
+footer{
+    font-size: 0.75em;
+    font-weight: bold;
+    text-align: center;
+    background-image: linear-gradient(to bottom, rgba(245, 245, 245), white);
+    padding: none;
+    margin-top: auto;
+    border-radius: 0.25em;
+    border-style: solid;
+    border-color: lightgrey;
+    border-width: 0.12em;
+    margin-right: 1em;
+}
+
+footer:hover{
+    background-image: linear-gradient(to bottom, rgb(245, 245, 245), rgb(253, 253, 253));
+}
+
+footer:visited{
+    color: blue;
+}
+
+/*IDs*/
+#top{
+    display: flex;
+    flex-direction: column;
+    min-height: 20dvh;
+    min-width: 100dvw;
+}
+
+#main{
+    display: flex;
+    flex-direction: column;
+    margin-left: 20%;
+    min-height: 73dvh;
+}
+
+@media screen and (max-width: 912px) {
+
+    #main{
+        margin: 0px;
+        display: block
+
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    body {
+        background-color: azure;
+        background-image: none;
+        position: unset;
+    }
+
+    nav {
+        background: azure;
+        margin-bottom: 3px;
+        border-bottom-style: solid;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        border-width: 0.15em;
+        border-color: black;
+        border-radius: 0%;
+        text-align: center;
+    }
+
+    nav:hover {
+        background-color: azure;
+        background-image: none;
+    }
+    
+    nav a {
+        color: black;
+        padding: 0.42em;
+        text-decoration: none;
+        background-image: none;
+    }
+
+    nav a:hover {
+        color: black;
+        background-color: azure;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-image: none;
+        text-decoration: none;
+        border-style: none;
+    }
+
+    footer {
+        display: none;
+    }
+
+    #desknav{
+        display: none;
+    }
+    
+    #start{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 912px){
+    #mobnav{
+        display: none;
+    }
+}

@@ -1,0 +1,38 @@
+#sidepic{
+    display: flex;
+    flex-direction: column;
+    width: 18%;
+    padding: 0.2em;
+    margin: 0.2em;
+    position: fixed;
+    height: 65dvh;
+    background-image: url(puppymill.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-style: solid;
+    border-color: burlywood;
+    border-width: 0.15em;
+    border-radius: 2%;
+    background-position: center;
+}
+
+@media screen and (max-width: 912px) {
+    #mobilepic {
+        height: 30dvh;
+        width: 100dvw;
+        background-image: url(puppymill.jpeg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        margin: none;
+    }
+
+    #sidepic {
+        display: none;
+    }
+}
+
+@media screen and (min-width:912px) {
+    #mobilepic {
+        display: none;
+    }
+}
